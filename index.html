@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <meta charset="UTF-8">
+    <title>Android | Routine</title>
+    <script src="https://use.fontawesome.com/567991c64d.js"></script>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="prism.css" rel="stylesheet" />
+
+    <style>
+		pre {
+			background-color: #7d7d7d;
+			margin-top: 10px;
+		}
+
+		i {
+			cursor: pointer;
+			color: #FA9F78;
+			padding-top: 6px;
+		}
+		#report {
+			padding-left: 10px;
+		}
+    </style>
+<body>
+    
+    <div class="col-lg-4 col-lg-offset-4 col-xs-8 col-xs-offset-2">
+		<div class="col-lg-12">
+			<table class="table table-hover" id="data">
+				<thead>
+					<tr>
+						<th>Variable</th>
+						<th>Type</th>
+						<th>Add</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="variable"><input type="text"></td>
+						<td class="type"><input type="text"></td>
+						<td><i class="fa fa-plus-circle fa-lg" id="add"></i></td>
+					</tr>
+				</tbody>
+			</table>
+			<label for="name">Class name</label>
+			<input type="text" name="name" class="name">
+			<i class="fa fa-play-circle fa-lg" id="report"></i>			
+		</div>
+
+		<div class="result"></div>
+	</div>
+	<script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+	<script src="prism.js"></script>
+</body>
+</html>
