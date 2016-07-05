@@ -322,3 +322,22 @@ footer {
     color:#444;
   }
 }
+
+
+pre {
+  background-color: #7d7d7d;
+  margin-top: 10px;
+}
+
+i {
+  cursor: pointer;
+  color: #FA9F78;
+  padding-top: 6px;
+}
+#report {
+  padding-left: 10px;
+}
+
+td {
+  padding: 0!important;
+}
