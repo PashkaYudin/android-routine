@@ -49,7 +49,7 @@
         result += ') {'+'\n';
 
         for (var i = 1; i <= count-1; i++) {
-            result += '\t\t'+'this.'+arrVars[i]+' = '+arrVars[i]+'\n';
+            result += '\t\t'+'this.'+arrVars[i]+' = '+arrVars[i]+';'+'\n';
         }
         result += '\t'+'}'+'\n\n';
 
