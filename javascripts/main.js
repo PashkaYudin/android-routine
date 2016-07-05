@@ -21,6 +21,7 @@
 
 
     function getResult() {
+    	$('.result').empty();
         var ClassName = $('.name').val();
         var count = $('#data tbody tr').length;
         var arrVars = [];
