@@ -28,7 +28,7 @@
         var arrTypes = [];
         $("#data tr").each(function(){
             arrVars.push($(this).find(".variable").text()); //put elements into array
-            arrTypes.push($(this).find(".type").val()); //put elements into array
+            arrTypes.push($(this).find(".type").text()); //put elements into array
         });
 
         var result = 'public class ' + ClassName + ' {'+ '\n';
