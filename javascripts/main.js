@@ -1,6 +1,18 @@
 ﻿$(document).ready(function() {
+    Prism.highlightAll();
+
     $(document).on("click", "#report", function() {
             getResult();
+            return false;
+    });
+
+    $(document).on("click", "#clear", function() {
+            $('.result').empty();
+            return false;
+    });
+
+    $(document).on("click", "#clear-tr", function() {
+            $(this).parent().parent().remove();
             return false;
     });
 
@@ -12,9 +24,10 @@
 			newTR.find('input').val("");
 			body.append(newTR);
 			thisTR.find("input").each(function() {
-				$(this).parent().html($(this).val() == "" ? "0" : $(this).val());
+				$(this).parent().html($(this).val() == "" ? "-" : $(this).val());
 			});
-			thisTR.find("i").hide();
+			thisTR.find("i.fa-plus-circle").hide();
+            thisTR.find("i.fa-times-circle").show();
 			return false;
     });
 });
@@ -64,7 +77,7 @@
         result = result.slice(0,-2);
         result += '\n'+'}';             
                      
-        $('.result').append('<pre><code class="language-java">' + result + '</code></pre>');
+        $('.result').append('<pre class="language-java"><code class="language-java">' + result + '</code></pre>');
     }
 
     String.prototype.capitalize = function() {
